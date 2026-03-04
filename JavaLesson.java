@@ -1,13 +1,10 @@
-Public class JavaLesson {
+public class JavaLesson {
 
-  public static void main (string [] args) {
-    int 
-    int[] cities = ["Boston", "Phoenix", "New York City", "Dallas","Portland"]
-    int[] states = ["MA","AZ","NY","TX","OR"]
-    int[][] places = {cities, states}
+  public static void main(String[] args) {
+    // define arrays of city and state names
+    String[] cities = {"Boston", "Phoenix", "New York City", "Dallas", "Portland"};
+    String[] states = {"MA", "AZ", "NY", "TX", "OR"};
+    String[][] places = {cities, states};
 
-
-    
   }
-  
 }
