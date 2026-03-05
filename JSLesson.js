@@ -1,23 +1,26 @@
 // for...in Loop
-// Returns the INDEX/KEY, not the value
+// Returns the index/key, not the value
 
 //object example
-const person = {
+let person = {
     name: "Molly",
     age: 19,
     city: "Boston"
 };
+
 console.log("for...in with object:");
-for (const key in person) {
-    console.log(`${key}: ${person[key]}`);
+let key;
+for (key in person) {
+    console.log(person[key]);
 }
 
 
 //array example
-const cities = ["Boston", "Phoenix", "New York City", "Dallas", "Portland"];
+let cities = ["Boston", "Phoenix", "New York City", "Dallas", "Portland"];
 
 console.log("\nfor...in with array:");
-for (const index in cities) {
+let index;
+for (index in cities) {
     console.log(cities[index]);
 }
 
@@ -42,15 +45,17 @@ console.log(tutor);
 
 
 console.log("\nfor...of with array:");
-for (const city of cities) {
+let city; //just acting as a kind of index, just with a fun name
+for (city of cities) {
     console.log(city);
 }
 
 const string = "Hello";
 
 console.log("\nfor...of with string:");
-for (const char of string) {
-    console.log(char);
+let letter;
+for (letter of string) {
+    console.log(letter);
 }
 
 //Think of this more as just outputting the values of the array, not looping over them. 
