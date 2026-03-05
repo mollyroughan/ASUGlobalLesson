@@ -24,11 +24,13 @@ for (const index in cities) {
 //Think of this as looping through an array or object and logging the value by increasing the index of the loop each time
 
 
+
 // --------------------------------------------------------------------------------------------------------
 
 
 // for...of Loop
 // Returns the actual value, not the value of the index
+
 
 console.log("\nfor...of with array:");
 for (const city of cities) {
@@ -42,5 +44,6 @@ for (const char of string) {
     console.log(char);
 }
 
-//Think of this more as just outputting the values of the array, not looping over them.
+//Think of this more as just outputting the values of the array, not looping over them. 
+//This one is much better for arrays (work for strings b/c JS saves strings as arrays of characters in memory!)
 
