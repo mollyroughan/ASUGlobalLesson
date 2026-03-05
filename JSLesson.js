@@ -7,7 +7,6 @@ const person = {
     age: 19,
     city: "Boston"
 };
-
 console.log("for...in with object:");
 for (const key in person) {
     console.log(`${key}: ${person[key]}`);
@@ -19,14 +18,17 @@ const cities = ["Boston", "Phoenix", "New York City", "Dallas", "Portland"];
 
 console.log("\nfor...in with array:");
 for (const index in cities) {
-    console.log(`Index ${index}: ${cities[index]}`);
+    console.log(cities[index]);
 }
 
-// ============================================
+//Think of this as looping through an array or object and logging the value by increasing the index of the loop each time
+
+
+// --------------------------------------------------------------------------------------------------------
 
 
 // for...of Loop
-// Returns the actual VALUE, not the index
+// Returns the actual value, not the value of the index
 
 console.log("\nfor...of with array:");
 for (const city of cities) {
@@ -39,4 +41,6 @@ console.log("\nfor...of with string:");
 for (const char of string) {
     console.log(char);
 }
+
+//Think of this more as just outputting the values of the array, not looping over them.
 
